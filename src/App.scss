@@ -1,0 +1,40 @@
+.page{
+    background-color: #ebe6e6;
+    .nav-link,.link{
+        color: inherit;
+        text-decoration: none;
+    }
+    .link:hover{
+        text-decoration: underline;
+    }
+}
+@mixin xsmallMobile{
+    @media (max-width : 550px){
+        @content;
+    }
+}
+
+@mixin smallMobile{
+    @media (max-width : 600px){
+        @content;
+    }
+}
+
+
+@mixin spclMobile{
+    @media (max-width : 750px){
+        @content;
+    }
+}
+
+@mixin normalMobile{
+    @media (max-width : 940px){
+        @content;
+    }
+
+}
+@mixin largeMobile{
+    @media (max-width : 1250px){
+        @content;
+    }
+}

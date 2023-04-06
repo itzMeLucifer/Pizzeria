@@ -1,0 +1,37 @@
+@import '../../App.scss';
+
+.category-container{
+    .category-items-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+        flex-direction: column;
+        padding-bottom: 80px;
+        h2{
+            font-family: 'Pacifico', cursive;
+            font-size: 40px;
+            color: #ff3300;
+            letter-spacing: 5px;
+        }
+        .subtext{
+            font-weight: 600;
+            letter-spacing: 2px;
+            line-height: 25px;
+            color: darkslategray;
+            padding: 20px 50px;
+            max-width: 80%;
+            margin-bottom: 15px;
+            @include xsmallMobile{
+                padding: 20px 20px;
+                max-width: 100%;
+            }
+        }
+        .item-box{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap:25px;
+        }
+    }
+}

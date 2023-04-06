@@ -1,0 +1,189 @@
+@import '../../App.scss';
+
+.order-box{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    .order{
+        display: flex;
+        gap: 10px;
+        .sr-no{
+            @include spclMobile{
+                display: none;
+            }
+        }
+        .order-info-item{
+            flex:1;
+            text-align: center;
+            padding: 20px;
+            @include largeMobile{
+                padding: 0px;
+            }
+            h4{
+                font-size: 18px;
+                color: #0a1535;
+                @include largeMobile{
+                    font-size: 14px;
+                }
+            }
+            p{
+                margin-top: 5px;
+                color: darkslategray;
+                font-weight: 600;
+                @include largeMobile{
+                    font-size: 12px;
+                }
+            }
+            .eye-icon{
+                margin-top: 5px;
+                font-size: 20px;
+                color: darkslategray;
+                cursor: pointer;
+            }
+        }
+        .address-p{
+            flex: 5;
+            @include spclMobile{
+                flex: 3;
+            }
+            @include spclMobile{
+                flex: 2;
+            }
+        }
+        .order-food{
+            flex: 3;
+            @include spclMobile{
+                flex: 2;
+            }
+            @include spclMobile{
+                flex: 1;
+            }
+
+        }
+    }
+    .order-details{
+        border-radius: 15px;
+        padding: 20px;
+        @include spclMobile{
+            padding: 10px;
+            flex-direction: column;
+            justify-content: center;
+        }
+        display: flex;
+        background-color: #ebe6e6;
+        .status{
+            flex: 4;
+            @include largeMobile{
+                flex: 3;
+            }
+            @include normalMobile{
+                flex: 2;
+            }
+            @include spclMobile{
+                flex: 1;
+            }
+            h4{
+                text-align: left;
+            }
+            .mobile-info{
+                display: none;
+                @include spclMobile{
+                    display: block;
+                }
+                .delivery{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    color: darkslategray;
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+            }
+            .status-tracker{
+                margin: 10px;
+                display: flex;
+                @include spclMobile{
+                     justify-content: space-evenly;
+                }
+                gap: 50px;
+                @include largeMobile{
+                    gap: 50px;
+                }
+                @include xsmallMobile{
+                    gap: 20px;
+                }
+                .notcompleted{
+                    opacity: 0.4;
+                }
+                .status-item{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    @include xsmallMobile{
+                        padding: 10px;
+                    }
+                    img{
+                        height: 40px;
+                        object-fit: cover;
+                        @include largeMobile{
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                    p{
+                        @include largeMobile{
+                            display: none;
+                        }
+                        margin-top: 5px;
+                        height: 20px;
+                        overflow: hidden;
+                        color: darkslategray;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .cart-details{
+            color: white;
+            @include spclMobile{
+                width: 100%;
+            }
+            background-color: #0a1535;
+            flex: 1;
+            padding: 10px 20px;
+            h4{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            p{
+                margin-top: 5px;
+                display: flex;
+                .head{
+                    display: block;
+                    width: 100px;
+                    color: #ff3300;
+                }
+            }
+            button{
+                cursor: not-allowed;
+                margin-top: 10px;
+                outline: none;
+                border: none;
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                font-weight: 600;
+                color: white;
+                background-color: #ff3300;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    .order-box:hover{
+        box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81);
+        -webkit-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81);
+        -moz-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81);
+    }
+}

@@ -1,0 +1,25 @@
+.address-item-container{
+    .address-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .add-icon:hover{
+            color: #ff3300;
+        }
+        .btns{
+            display: flex;
+            gap: 20px;
+            .save-icon{
+                color: green;
+                cursor: pointer;
+            }
+            .cancel-icon{
+                color: red;
+                cursor: pointer;
+            }
+        }
+    }
+    .addresses{
+    }
+}

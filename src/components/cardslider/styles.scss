@@ -1,0 +1,101 @@
+@import '../../App.scss';
+
+.card-slider-container{
+    padding-bottom: 20px;
+    .slider-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px 15px 20px;
+        h2{
+            font-family: 'Pacifico', cursive;
+            color: #ff3300;
+            letter-spacing: 3px;
+        }
+        button{
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            background-color: #ebe6e6;
+            color: #ff3300;
+            border-bottom: 2px solid #ebe6e6;
+            font-weight: 600;
+            font-size: 14px;
+            .icon{
+                font-size: 16px;
+            }
+        }
+        button:hover{
+            border-bottom: 2px solid #ff3300;
+            
+        }
+    }
+    .slider-container{
+        background-color: #ebe6e6;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 0 20px;
+        .prev-btn{
+            z-index: 1;
+            cursor: pointer;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81);
+            -webkit-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81);
+            -moz-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81);
+            .icon{
+                font-size: 35px;
+                color: #ff3300;
+            }
+            display: none;
+        }
+        .prev{
+            left: 10px;
+        }
+        .next{
+            right: 10px;
+        }
+        .slider{
+            width: 100%;
+            overflow: hidden;
+            overflow-x: scroll;
+            .slider-box{
+                flex: 1;
+                display: flex;
+                gap: 20px;
+                transition: all 0.5s ease-out;
+                
+                .item:hover {
+                    -webkit-transform: scale(1.05, 1.05);
+                    box-shadow: 0 0 15px -10px tomato;
+                    transition: all 0.15s linear;
+                  }
+            }
+            .slider-box::-webkit-scrollbar{
+                display: none;
+            }
+        }
+        .slider::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    .slider-container:hover{
+        .prev-btn{
+            display: flex;
+            @include xsmallMobile{
+                display: none;
+            }
+        }
+    }
+}

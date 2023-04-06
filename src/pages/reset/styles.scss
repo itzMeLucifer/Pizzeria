@@ -1,0 +1,83 @@
+@import '../../App.scss';
+
+.reset-bg-container{
+    height: 100vh;
+    background: url("../../images/bgimage.jpg");     
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    position: relative;
+    .form{
+        padding: 50px 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+        @include largeMobile{
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 40%;
+        }
+        @include normalMobile{
+            width: 60%;
+        }
+        @include smallMobile{
+            width: 80%;
+        }
+        @include xsmallMobile{
+            width: 95%;
+        }
+        .btns{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            button{
+                cursor: pointer;
+                width: 150px;
+                @include xsmallMobile{
+                    width: 100px;
+                }
+                padding: 12px 0px;
+                outline: none;
+                border: none;
+                background-color: #ff3300;
+                color: white;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 14px;
+            }
+            .signup{
+                padding: 10px 0px;
+                background-color: white;
+                color: black;
+                border: 2px solid lightgray;
+            }
+        }
+        .password{
+            display: flex;
+            border: 2px solid lightgray;
+            width: 100%;
+            align-items: center;
+            .password-input{
+                flex: 1;
+                padding: 10px 10px;
+                outline: none;
+                border: none;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+            .eye{
+                margin-right: 10px;
+                color: grey;
+                cursor: pointer;
+            }
+        }
+    }
+}

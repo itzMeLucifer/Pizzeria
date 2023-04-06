@@ -1,0 +1,88 @@
+@import '../../App.scss';
+
+.forgot-bg-container{
+    height: 100vh;
+    background: url("../../images/bgimage.jpg");     
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    position: relative;
+    .form{
+        width: 27%;
+        padding: 50px 30px;
+        background-color: white;
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        @include largeMobile{
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 40%;
+        }
+        @include normalMobile{
+            width: 60%;
+        }
+        @include smallMobile{
+            width: 80%;
+        }
+        @include xsmallMobile{
+            width: 95%;
+        }
+        p{
+            text-align: center;
+        }
+        .username-input{
+            width: 100%;
+            padding: 10px 10px;
+            outline: none;
+            border: 2px solid lightgray;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+        .btns{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            button{
+                @include xsmallMobile{
+                    width: 100px;
+                }
+                cursor: pointer;
+                width: 150px;
+                padding: 12px 0px;
+                outline: none;
+                border: none;
+                background-color: #ff3300;
+                color: white;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 14px;
+            }
+            .signup{
+                padding: 10px 0px;
+                background-color: white;
+                color: black;
+                border: 2px solid lightgray;
+            }
+        }
+        button{
+            cursor: pointer;
+            width: 100%;
+            padding: 12px 0px;
+            outline: none;
+            border: none;
+            background-color: #ff3300;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@import '../../App.scss';
+
+.product-left{
+    flex: 1;
+    display: flex;
+    gap: 50px;
+    @include largeMobile{
+        gap: 20px;
+    }
+    align-items: center;
+    .select-image{
+        width: 350px;
+        height: 350px;
+        @include largeMobile{
+            width: 300px;
+            height: 300px;
+        }
+        @include smallMobile{
+            width: 200px;
+            height: 200px;
+        }
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .active{
+        background-color: white;box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81);
+        -webkit-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81);
+        -moz-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81); 
+    }
+    .other-images{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .image{
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            @include smallMobile{
+                width: 80px;
+                height: 80px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .active{
+            background-color: white;box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81);
+            -webkit-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81);
+            -moz-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81); 
+        }
+        .image:hover{
+            background-color: white;
+            box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81);
+            -webkit-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81);
+            -moz-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.81); 
+        }
+    }
+}

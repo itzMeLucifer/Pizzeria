@@ -1,0 +1,61 @@
+
+.cart{
+    flex:1;
+    height: 391px;
+    background-color: #0a1535;
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h2{
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    p{
+        display: flex;
+        .head{
+            display: block;
+            width: 100px;
+            color: #ff3300;
+        }
+    }
+    h4{
+        margin-top: 20px;
+    }
+    .coupon{
+        input{
+            width: 100%;
+            outline: none;
+            border: none;
+            padding: 10px;
+            font-size: 15px;
+        }
+    }
+    .btn{
+        margin-left: 100%;
+        transform: translateX(-100%);
+        width: 80px;
+        outline: none;
+        border: none;
+        color: white;
+        background-color: #ff3300;
+        padding: 5px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .checkout{
+        align-self: center;
+        width: 300px;
+        margin-top: 20px;
+        outline: none;
+        border: none;
+        color: white;
+        background-color: #ff3300;
+        padding: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+}

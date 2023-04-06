@@ -1,0 +1,167 @@
+@import '../../App.scss';
+
+.login-bg-container{
+    height: 100vh;
+    background: url("../../images/bgimage.jpg");     
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    position: relative;
+    .form{
+        padding: 50px 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+        @include largeMobile{
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 40%;
+        }
+        @include normalMobile{
+            width: 60%;
+        }
+        @include smallMobile{
+            width: 80%;
+        }
+        @include xsmallMobile{
+            width: 95%;
+        }
+        .btns{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            button{
+                cursor: pointer;
+                width: 150px;
+                @include xsmallMobile{
+                    width: 100px;
+                }
+                padding: 12px 0px;
+                outline: none;
+                border: none;
+                background-color: #ff3300;
+                color: white;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 14px;
+            }
+            .signup{
+                padding: 10px 0px;
+                background-color: white;
+                color: black;
+                border: 2px solid lightgray;
+            }
+        }
+        .username-input{
+            width: 100%;
+            padding: 10px 10px;
+            outline: none;
+            border: 2px solid lightgray;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+        .password{
+            display: flex;
+            border: 2px solid lightgray;
+            width: 100%;
+            align-items: center;
+            .password-input{
+                flex: 1;
+                padding: 10px 10px;
+                outline: none;
+                border: none;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+            .eye{
+                margin-right: 10px;
+                color: grey;
+                cursor: pointer;
+            }
+        }
+        .forgot{
+            align-self: flex-end;
+            margin-top: -10px;
+            text-align: right;
+            p{
+                .link{
+                    color: inherit;
+                }
+                cursor: pointer;
+            }
+            P:hover{
+                text-decoration: underline;
+                color: #ff3300;
+            }
+        }
+        button{
+            cursor: pointer;
+            width: 100%;
+            padding: 12px 0px;
+            outline: none;
+            border: none;
+            background-color: #ff3300;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+        .other-login{
+            margin-top: 20px;
+            border-top: 1px solid gray ;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            p{
+                width: 120px;
+                height: 20px;
+                text-align: center;
+                margin-top: -12px;
+                background-color: white;
+            }
+        }
+        .google-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            width: 100%;
+            padding: 10px 0px;
+            outline: none;
+            border: none;
+            background-color: #ff3300;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 14px;
+            background-color: white;
+            color: black;
+            border: 2px solid lightgray;
+            gap: 10px;
+            img{
+                width: 30px;
+                height:30px;
+            }
+        }
+        p{
+            span{
+                .link{
+                    color: inherit;
+                }
+                cursor: pointer;
+                color: #ff3300;
+            }
+            span:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

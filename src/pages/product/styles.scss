@@ -1,0 +1,16 @@
+@import '../../App.scss';
+
+.product-container{
+    .product-info-container{
+        width: 100%;
+        display: flex;
+        padding: 50px;
+        @include largeMobile{
+            padding: 20px 10px;
+        }
+        @include normalMobile{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

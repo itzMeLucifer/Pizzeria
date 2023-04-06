@@ -1,0 +1,123 @@
+@import '../../App.scss';
+
+.cart-item{
+    padding: 20px;
+    display: flex;
+    margin: 20px;
+    @include smallMobile{
+        margin: 10px;
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    .cart-item-image{
+        width: 150px;
+        height: 150px;
+        @include xsmallMobile{
+            width: 100px;
+            height: 100px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .cart-item-info{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .name-delete{
+            display: flex;
+            justify-content: space-between;
+            .delete-icon{
+                color: red;
+                cursor: pointer;
+            }
+        }
+        h2{
+            font-size: 25px;
+            @include xsmallMobile{
+                font-size: 20px;
+            }
+            letter-spacing: 1px;
+            color: rgb(92, 91, 91);
+        }
+        .price{
+            @include xsmallMobile{
+                font-size: 16px;
+            }
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .item-desc{
+            white-space: initial;
+            word-wrap: break-word;
+            height: 35px;
+            max-width: 100%;
+            font-weight: 600;
+            font-size: 15px;
+            overflow: hidden;
+            @include xsmallMobile{display: none;
+            }
+        }
+        .cart-total{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 15px;
+            @include xsmallMobile{
+                margin-top: 10px;
+                flex-direction: column-reverse;
+                align-items: flex-start;
+            }
+            .quantity-btns{
+                button{
+                    width: 30px;
+                    outline: none;
+                    border: none;
+                    background-color: white;
+                    border: 2px solid #ff3300;
+                    color: darkslategray;
+                    padding: 5px;
+                    font-size: 18px;
+                    @include xsmallMobile{
+                        font-size: 14px;
+                    }
+                    cursor: pointer;
+                }
+                input{
+                    text-align: center;
+                    width: 50px;
+                    outline: none;
+                    border: none;
+                    background-color: white;
+                    border-top: 2px solid #ff3300;
+                    border-bottom: 2px solid #ff3300;
+                    color: darkslategray;
+                    padding: 5px;
+                    font-size: 18px;
+                    @include xsmallMobile{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .total{
+                display: flex;
+                gap: 5px;
+                h4{
+                    color: rgb(92, 91, 91);
+                }
+                .total-amount{
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

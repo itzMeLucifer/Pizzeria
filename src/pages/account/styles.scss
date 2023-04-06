@@ -1,0 +1,119 @@
+@import '../../App.scss';
+
+.account-container{
+    .account-box{
+        display: flex;
+        padding: 20px 50px;
+        @include normalMobile{
+            padding: 20px 20px;
+        }
+        @include xsmallMobile{
+            flex-direction: column;
+        }
+        gap: 20px;
+        color: darkslategray;
+        .icon{
+            cursor: pointer;
+        }
+        .account-left{
+            flex: 1;
+            @include xsmallMobile{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .user-info{
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include normalMobile{
+                    flex-direction: column;
+                }
+                @include xsmallMobile{
+                    display: none;
+                }
+                gap: 20px;
+                background-color: white;
+                .user-image{
+                    width: 60px;
+                    height: 60px;
+                    @include normalMobile{
+                        width: 40px;
+                        height: 40px;
+                    }
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                h4{
+                    @include normalMobile{
+                        display: none;
+                    }
+                }
+                p{
+                    @include normalMobile{
+                        display: none;
+                    }
+                }
+            }
+            .menu{
+                background-color: white;
+                margin-top: 20px;
+                @include xsmallMobile{
+                    display: flex;
+                    margin-top: 0px;
+                }
+                .menu-item{
+                    cursor: pointer;
+                    padding: 8px 20px;
+                    @include xsmallMobile{
+                        padding: 10px;
+                    }
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    @include normalMobile{
+                        justify-content: center;
+                    }
+                    .icon-div{
+                        width:40px;
+                        height: 40px;
+                        @include xsmallMobile{
+                            width: 30px;
+                            height: 30px;
+                        }
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    h4{
+                        @include normalMobile{
+                            display: none;
+                        }
+                    }
+                }
+                .active{
+                    background-color: #e6f2ff;
+                }
+                .menu-item:hover{
+                    background-color: #e6f2ff;
+                }
+            }
+        }
+        .account-right{
+            flex: 3;
+            background-color: white;
+            padding: 20px 50px;
+            @include normalMobile{
+                padding: 20px 20px;
+            }
+        }
+    }
+}

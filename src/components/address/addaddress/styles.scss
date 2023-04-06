@@ -1,0 +1,74 @@
+@import '../../../App.scss';
+
+.add-address-container{
+    width: 100%;
+    background-color:#e6f2ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    h3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .cancel-icon{
+            color: red;
+            cursor: pointer;
+        }
+    }
+    .address-form{
+        .basic-details{
+            display: flex;
+            @include spclMobile{
+                flex-direction: column;
+                gap: 0px;
+            }
+            justify-content: space-evenly;
+            gap: 25px;
+            .item{
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+            }
+        }
+        textarea{
+            width: 100%;
+            outline: none;
+            padding: 10px;
+            font-size: 16px;
+            height: 120px;
+            border: 2px solid lightgrey;
+        }
+        .genders{
+            display: flex;
+            gap: 30px;
+            margin-bottom: 15px;
+            .gender{
+                display: flex;
+                gap:10px;
+                align-items: center;
+                input{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+        button{
+            outline: none;
+            border: none;
+            padding: 10px;
+            background-color: #ff3300;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+    input{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 18px;
+        outline: none;
+        border: 2 px solid lightgrey;
+        color: darkslategray;
+    }
+}

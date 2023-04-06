@@ -1,0 +1,28 @@
+
+.address{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #e6f2ff;
+    .old-address-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        font-size: 18px;
+        .address-btns{
+            display: flex;
+            gap: 15px;
+        }
+        .delete-icon{
+            color: red;
+        }
+    }
+    .name-phone{
+        display: flex;
+        margin-bottom: 5px;
+        gap: 20px;
+        font-weight: 600;
+        color: darkgray;
+    }
+}

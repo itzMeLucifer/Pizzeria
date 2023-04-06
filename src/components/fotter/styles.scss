@@ -1,0 +1,134 @@
+@import '../../App.scss';
+
+.fotter-container{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+    background-color: #0a1535;
+    padding: 30px 50px;
+    color: rgb(235, 228, 228);
+    .header{
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border-bottom: 1px solid white;
+        .logo-image{
+            width: 90px;
+            height: 90px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .name-slogan{
+            display: flex;
+            flex-direction: column;
+            font-family: 'Pacifico', cursive;
+            letter-spacing: 2px;
+            .name{
+                font-size: 30px;
+                margin-top: -10px;
+            }
+            .slogan{
+                font-size: 18px;
+                margin-top: -10px;
+            }
+        }
+    }
+    .information{
+        display: flex;
+        border-bottom: 1px solid white;
+        padding: 20px 0px;
+        @include smallMobile{
+            flex-direction: column;
+        }
+        .left{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include xsmallMobile{
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            .left-cont{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .social{
+                    align-self: center;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    color: rgb(156, 154, 154);
+                }
+                .info-item{
+                    .key{
+                        word-wrap: break-word;
+                        color: #ff3300;
+                    }
+                    display: flex;
+                    gap: 10px;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    color: rgb(156, 154, 154);
+                }
+            }
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .right-cont{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                @include smallMobile{
+                    margin-top: 20px;
+                }
+                .social{
+                    align-self: center;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    color: rgb(156, 154, 154);
+                }
+                .items{
+                    display: flex;
+                    flex-direction: column;
+                    @include smallMobile{
+                        flex-direction: row;
+                    }
+                    gap: 20px;
+                    .item{
+                        p{
+                            @include smallMobile{
+                                display: none;
+                            }
+
+                        }
+                        .item-icon{
+                            color: #ff3300;
+                        }
+                        display: flex;
+                        gap: 15px;
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                        color: rgb(156, 154, 154);
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        color: rgb(156, 154, 154);
+        .icon{
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 20px;
+        }
+    }
+}
