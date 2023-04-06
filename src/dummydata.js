@@ -583,23 +583,23 @@ export const sliderItems = [
     },
     {
         _id:2,
-        _category:1,
+        category:1,
         slideImage:pizza6
     },
     {
         _id:3,
         category:1,
-        slideImage:pizza8
+        slideImage:pizza6
     },
     {
         _id:4,
         category:1,
-        _slideImage:pizza3
+        slideImage:pizza3
     },
     {
         _id:5,
         category:2,
-        _slideImage:drink5
+        slideImage:drink5
     },
     {
         _id:6,

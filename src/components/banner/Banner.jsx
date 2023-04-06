@@ -52,7 +52,7 @@ const Banner = ({category}) => {
         if(window.location.pathname === '/'){
           setTimeout(() => {
             setFetched('done')
-            setItems(sliderItems.filter((item) => item._id in [1,5,9,13]));
+            setItems(sliderItems.filter((item) => item._id === 1 ||item._id === 5||item._id === 9||item._id === 13));
           }, 0);
         }
         break;
@@ -84,7 +84,7 @@ const Banner = ({category}) => {
         <div className="banner-slider"id='banner-slider' style={{transform:`translateX(${-100*idx}vw)`}}>
           {
             !isloading?
-            items.map(item => (
+            items?.map(item => (
               <div className="banner" key={item._id}>
                 <img src={item.slideImage} alt="" />
               </div>
