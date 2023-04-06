@@ -25,10 +25,10 @@ const Fotter = () => {
         <div className="left">
           <div className="left-cont">
             <p className="social">Contact Info</p>
-            <p className="info-item"><span className='key'>Address </span><span>E-25 D, New Ashok Nagar, New Delhi-110096</span></p>
-            <p className="info-item"><span className='key'>Landmark </span><span>Dashmesh Public School, Vasundhara Enclave</span></p>
+            <p className="info-item"><span className='key'>Address </span><span>E-126 M, New Orlendo, USA-1125696</span></p>
+            <p className="info-item"><span className='key'>Landmark </span><span>Max Hospital, Orlendo</span></p>
             <p className="info-item"><span className='key'>Working Shift </span><span>8:00 AM - 12:00 PM</span></p>
-            <p className="info-item"><span className='key'>Address </span><span>+91-836-811-5640</span></p>
+            <p className="info-item"><span className='key'>Address </span><span>+91-987-654-3210</span></p>
           </div>
         </div>
         <div className="right">

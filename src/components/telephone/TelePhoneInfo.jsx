@@ -12,7 +12,7 @@ const TelePhoneInfo = () => {
         </div>
         <div className="info">
           <p className="text">Order Now</p>
-          <p className="number">+91-836-811-5640</p>
+          <p className="number">+91-987-654-3210</p>
         </div>
       </div>
     </div>

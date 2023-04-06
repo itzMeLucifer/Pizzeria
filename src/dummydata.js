@@ -47,7 +47,7 @@ import logout from './images/icons/logout.png'
 import profile from './images/icons/profile.png'
 import order from './images/icons/orders.png'
 import cart from './images/icons/cart.png'
-import user from './images/user1.jpg'
+import user from './images/user.jpg'
 
 export const state = {
     selectedProduct: {},
@@ -688,24 +688,24 @@ export const coupons = [
 
 export const users = [{
     _id:1,
-    firstName:'Sagar',
-    middleName:'Brijesh',
-    lastName:'kumar',
+    firstName:'John',
+    middleName:'Stephen',
+    lastName:'Doe',
     gender:'M',
-    email:'sbhupender272@gmail.com',
-    phone:'8368115640',
+    email:'johndoe19975@gmail.com',
+    phone:'9876543210',
     password:'Abcd@1234',
     profilePic:user,
     addresses:[
         {
             _id:1,
-            recieverName:'Sagar',
-            recieverPhone:'8368115640',
-            house:'E25 D gali no-3',
-            state:'Delhi',
-            district:'East Delhi',
-            locality:'New Ashko Nagar',
-            pincode:'110096',
+            recieverName:'John Doe',
+            recieverPhone:'9876543210',
+            house:'E-126 Oregon Street',
+            state:'Orlendo',
+            district:'Oregon',
+            locality:'New Orlendo',
+            pincode:'1125696',
             type:0,
         }
     ]
